@@ -5,7 +5,7 @@
         private string logFilePath = "logFile.log";
         private void WriteMessage(string message)
         {
-            using(StreamWriter writer = new StreamWriter(logFilePath, true))
+            using (StreamWriter writer = new StreamWriter(logFilePath, true))
             {
                 writer.WriteLine(message);
             }
